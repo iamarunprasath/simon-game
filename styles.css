@@ -3,7 +3,8 @@ body {
   background-color: #041324;
 }
 
-#level-title {
+#level-title,
+#mob-title {
   font-family: "Press Start 2P", cursive;
   font-size: 3rem;
   margin: 5%;
@@ -49,4 +50,59 @@ body {
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: grey;
+}
+
+#start-btn {
+  all: unset;
+  font-family: "Press Start 2P", cursive;
+  color: blanchedalmond;
+  margin: 2rem;
+  padding: 1rem;
+  border: blanchedalmond;
+  border-style: solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background-color: blanchedalmond;
+  color: black;
+}
+
+@media only screen and (min-width: 850px) {
+  #start-btn {
+    display: none;
+  }
+  #mob-title {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  #level-title {
+    display: none;
+  }
+  #mob-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    width: 20%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    width: 15vh;
+    height: 15vh;
+    border: 0.4rem solid black;
+  }
 }
