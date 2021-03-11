@@ -55,17 +55,17 @@ body {
 #start-btn {
   all: unset;
   font-family: "Press Start 2P", cursive;
-  color: blanchedalmond;
+  color: #fef2bf;
   margin: 2rem;
   padding: 1rem;
-  border: blanchedalmond;
+  border: #fef2bf;
   border-style: solid;
   border-radius: 10px;
   cursor: pointer;
 }
 
 #start-btn:hover {
-  background-color: blanchedalmond;
+  background-color: #fef2bf;
   color: black;
 }
 
