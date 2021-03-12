@@ -4,6 +4,7 @@ var gamePattern = [];
 var userClickedPattern = [];
 var started = false;
 var level = 0;
+$("#motive").text("Good Luck! You're on the right track!!!");
 
 $(document).keypress(()=>{
   if (!started) {
@@ -37,6 +38,8 @@ $(".btn").click((event)=> {
 
 function nextSequence() {
   $("#start-btn").text("start");
+  $("#motive").text("YaY! C'mon dude!!");
+
   userClickedPattern = [];
   level++;
   $("#level-title").text("Level " + level);
@@ -73,11 +76,14 @@ function checkAnswer(currentLevel) {
       $("body").addClass("game-over");
       $("#level-title").text("Game Over, Press Any Key to Restart");
       $("#mob-title").text("Game Over, Press the Restart button to play again!");
+      $("#motive").text("Oh no! Good Try, Play me Again!!");
       setTimeout(function () {
         $("body").removeClass("game-over");
       }, 200);
       startOver();
       $("#start-btn").text("Restart");
+
+
     }
 }
 
